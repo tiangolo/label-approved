@@ -1,0 +1,14 @@
+name: Label Approved
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  label-approved:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: tiangolo/label-approved@main
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        debug: true
