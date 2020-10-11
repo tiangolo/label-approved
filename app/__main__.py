@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     github_repository: str
     input_token: SecretStr
     input_debug: Optional[bool] = False
-    config: Dict[str, LabelSettings] = {
+    input_config: Dict[str, LabelSettings] = {
         "approved-2": LabelSettings(await_label="awaiting review", number=2)
     }
 
@@ -32,7 +32,7 @@ for pr in repo.get_pulls(state="open"):
     pr_labels = list(pr.get_labels())
     pr_label_by_name = {label.name: label for label in pr_labels}
     reviews = list(pr.get_reviews())
-    for approved_label, conf in settings.config.items():
+    for approved_label, conf in settings.input_config.items():
         logging.debug(f"Processing config: {conf.json()}")
         if conf.await_label is None or (conf.await_label in pr_label_by_name):
             logging.debug(f"Processable PR: {pr.number}")
