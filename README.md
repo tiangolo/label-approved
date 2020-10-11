@@ -110,6 +110,10 @@ Check each open PR, and:
 ### Latest Changes
 
 
+### 0.0.1
+
+First release 🎉
+
 ## License
 
 This project is licensed under the terms of the MIT license.
