@@ -20,10 +20,11 @@ class Settings(BaseSettings):
     }
 
 
-logging.basicConfig(level=logging.INFO)
 settings = Settings()
 if settings.input_debug:
     logging.basicConfig(level=logging.DEBUG)
+else:
+    logging.basicConfig(level=logging.INFO)
 logging.debug(f"Using config: {settings.json()}")
 g = Github(settings.input_token.get_secret_value())
 repo = g.get_repo(settings.github_repository)
