@@ -1,0 +1,17 @@
+name: Tiangolo's Label Approved
+author: Sebastián Ramírez <tiangolo@gmail.com>
+description: Add labels to approved Pull Requests
+inputs:
+  token:
+    description: Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}
+    required: true
+  debug:
+    description: Use debug=True to enable more logging.
+    required: false
+    default: 'false'
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: bookmark
+  color: green
