@@ -21,7 +21,9 @@ jobs:
   label-approved:
     runs-on: ubuntu-latest
     steps:
-    - uses: tiangolo/label-approved@0.0.1
+    - uses: docker://tiangolo/label-approved:0.0.1
+    # You can also use the action directly, but that will take about an extra minute:
+    # - uses: tiangolo/label-approved@0.0.1
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -65,7 +67,7 @@ jobs:
   label-approved:
     runs-on: ubuntu-latest
     steps:
-    - uses: tiangolo/label-approved@0.0.1
+    - uses: docker://tiangolo/label-approved:0.0.1
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         config: >
