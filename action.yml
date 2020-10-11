@@ -9,6 +9,9 @@ inputs:
     description: Use debug=True to enable more logging.
     required: false
     default: 'false'
+  config:
+    description: Add a custom config with other labels, number of approvals, etc.
+    required: false
 runs:
   using: docker
   image: Dockerfile
