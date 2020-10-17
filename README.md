@@ -109,6 +109,7 @@ Check each open PR, and:
 
 ### Latest Changes
 
+* 🐛 Fix logic to compute the number of approvals, count only last approval per user. PR [#3](https://github.com/tiangolo/label-approved/pull/3) by [@tiangolo](https://github.com/tiangolo).
 
 ### 0.0.1
 
