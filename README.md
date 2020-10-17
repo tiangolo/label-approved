@@ -21,9 +21,9 @@ jobs:
   label-approved:
     runs-on: ubuntu-latest
     steps:
-    - uses: docker://tiangolo/label-approved:0.0.1
+    - uses: docker://tiangolo/label-approved:0.0.2
     # You can also use the action directly, but that will take about an extra minute:
-    # - uses: tiangolo/label-approved@0.0.1
+    # - uses: tiangolo/label-approved@0.0.2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -67,7 +67,7 @@ jobs:
   label-approved:
     runs-on: ubuntu-latest
     steps:
-    - uses: docker://tiangolo/label-approved:0.0.1
+    - uses: docker://tiangolo/label-approved:0.0.2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         config: >
@@ -108,6 +108,9 @@ Check each open PR, and:
 ## Release Notes
 
 ### Latest Changes
+
+
+### 0.0.2
 
 * 🐛 Fix approved user count logic. PR [#6](https://github.com/tiangolo/label-approved/pull/6) by [@tiangolo](https://github.com/tiangolo).
 * 🐛 Fix Python app name to be called in Docker. PR [#5](https://github.com/tiangolo/label-approved/pull/5) by [@tiangolo](https://github.com/tiangolo).
