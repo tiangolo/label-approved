@@ -111,6 +111,7 @@ Check each open PR, and:
 
 #### Internal
 
+* 🔧 Add funding. PR [#13](https://github.com/tiangolo/label-approved/pull/13) by [@tiangolo](https://github.com/tiangolo).
 * 👷 Add dependabot. PR [#8](https://github.com/tiangolo/label-approved/pull/8) by [@tiangolo](https://github.com/tiangolo).
 * 👷 Add latest-changes GitHub Action. PR [#7](https://github.com/tiangolo/label-approved/pull/7) by [@tiangolo](https://github.com/tiangolo).
 
