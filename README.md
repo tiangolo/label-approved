@@ -109,6 +109,9 @@ Check each open PR, and:
 
 ### Latest Changes
 
+#### Internal
+
+* 👷 Add latest-changes GitHub Action. PR [#7](https://github.com/tiangolo/label-approved/pull/7) by [@tiangolo](https://github.com/tiangolo).
 
 ### 0.0.2
 
