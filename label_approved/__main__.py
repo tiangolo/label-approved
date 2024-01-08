@@ -1,24 +1,25 @@
 import logging
-from typing import Dict, Optional
+from typing import Literal
 
 from github import Github
 from github.PullRequestReview import PullRequestReview
-from pydantic import BaseSettings, SecretStr
-from pydantic.main import BaseModel
+from pydantic import BaseModel, SecretStr
+from pydantic_settings import BaseSettings
 
 
 class LabelSettings(BaseModel):
-    await_label: Optional[str] = None
+    await_label: str | None = None
     number: int
+
+
+default_config = {"approved-2": LabelSettings(await_label="awaiting review", number=2)}
 
 
 class Settings(BaseSettings):
     github_repository: str
     input_token: SecretStr
-    input_debug: Optional[bool] = False
-    input_config: Dict[str, LabelSettings] = {
-        "approved-2": LabelSettings(await_label="awaiting review", number=2)
-    }
+    input_debug: bool | None = False
+    input_config: dict[str, LabelSettings] | Literal[""] = default_config
 
 
 settings = Settings()
@@ -34,7 +35,7 @@ for pr in repo.get_pulls(state="open"):
     pr_labels = list(pr.get_labels())
     pr_label_by_name = {label.name: label for label in pr_labels}
     reviews = list(pr.get_reviews())
-    review_by_user: Dict[str, PullRequestReview] = {}
+    review_by_user: dict[str, PullRequestReview] = {}
     for review in reviews:
         if review.user.login in review_by_user:
             stored_review = review_by_user[review.user.login]
@@ -45,7 +46,8 @@ for pr in repo.get_pulls(state="open"):
     approved_reviews = [
         review for review in review_by_user.values() if review.state == "APPROVED"
     ]
-    for approved_label, conf in settings.input_config.items():
+    config = settings.input_config or default_config
+    for approved_label, conf in config.items():
         logging.debug(f"Processing config: {conf.json()}")
         if conf.await_label is None or (conf.await_label in pr_label_by_name):
             logging.debug(f"Processable PR: {pr.number}")
