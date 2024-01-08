@@ -109,6 +109,8 @@ Check each open PR, and:
 
 ### Latest Changes
 
+* ♻️ Upgrade Pydantic version and logic to handle GitHub providing env vars even without values. PR [#15](https://github.com/tiangolo/label-approved/pull/15) by [@tiangolo](https://github.com/tiangolo).
+
 #### Internal
 
 * 🔧 Add funding. PR [#13](https://github.com/tiangolo/label-approved/pull/13) by [@tiangolo](https://github.com/tiangolo).
