@@ -1,4 +1,5 @@
 import logging
+from typing import Literal
 
 from github import Github
 from github.PullRequestReview import PullRequestReview
@@ -18,7 +19,7 @@ class Settings(BaseSettings):
     github_repository: str
     input_token: SecretStr
     input_debug: bool | None = False
-    input_config: dict[str, LabelSettings] | bool = default_config
+    input_config: dict[str, LabelSettings] | Literal[""] = default_config
 
 
 settings = Settings()
@@ -45,11 +46,7 @@ for pr in repo.get_pulls(state="open"):
     approved_reviews = [
         review for review in review_by_user.values() if review.state == "APPROVED"
     ]
-    config = (
-        settings.input_config
-        if isinstance(settings.input_config, dict)
-        else default_config
-    )
+    config = settings.input_config or default_config
     for approved_label, conf in config.items():
         logging.debug(f"Processing config: {conf.json()}")
         if conf.await_label is None or (conf.await_label in pr_label_by_name):
