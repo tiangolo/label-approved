@@ -21,9 +21,9 @@ jobs:
   label-approved:
     runs-on: ubuntu-latest
     steps:
-    - uses: docker://tiangolo/label-approved:0.0.2
+    - uses: docker://tiangolo/label-approved:0.0.3
     # You can also use the action directly, but that will take about an extra minute:
-    # - uses: tiangolo/label-approved@0.0.2
+    # - uses: tiangolo/label-approved@0.0.3
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -67,7 +67,7 @@ jobs:
   label-approved:
     runs-on: ubuntu-latest
     steps:
-    - uses: docker://tiangolo/label-approved:0.0.2
+    - uses: docker://tiangolo/label-approved:0.0.3
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         config: >
@@ -108,6 +108,10 @@ Check each open PR, and:
 ## Release Notes
 
 ### Latest Changes
+
+### 0.0.3
+
+### Fixes
 
 * ♻️ Upgrade Pydantic version and logic to handle GitHub providing env vars even without values. PR [#15](https://github.com/tiangolo/label-approved/pull/15) by [@tiangolo](https://github.com/tiangolo).
 
