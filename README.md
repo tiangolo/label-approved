@@ -109,6 +109,8 @@ Check each open PR, and:
 
 ### Latest Changes
 
+### 0.0.4
+
 #### Refactors
 
 * ♻️ Rename default label from "awaiting review" to "awaiting-review". PR [#16](https://github.com/tiangolo/label-approved/pull/16) by [@tiangolo](https://github.com/tiangolo).
