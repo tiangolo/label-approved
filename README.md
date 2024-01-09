@@ -30,9 +30,9 @@ jobs:
 
 This example uses the defaults configurations.
 
-It will run every night and check all the open PRs, for each PR with the label `awaiting review`, it will check the approvals.
+It will run every night and check all the open PRs, for each PR with the label `awaiting-review`, it will check the approvals.
 
-If there are 2 or more approvals, it will remove the label `awaiting review` and will add the label `approved-2`.
+If there are 2 or more approvals, it will remove the label `awaiting-review` and will add the label `approved-2`.
 
 ## Configuration
 
@@ -41,7 +41,7 @@ You can add different labels to apply.
 And for each label, you can specify:
 
 * `number`: the minimum number of approvals.
-* `await_label`: a label to filter the PRs. In the example above it is `awaiting review` (the default when no configs are provided).
+* `await_label`: a label to filter the PRs. In the example above it is `awaiting-review` (the default when no configs are provided).
     * If `await_label` is omitted or `null`, it will apply to all open PRs.
 
 These configs are passed as a JSON object, but as GitHub actions can only take strings as parameters, the JSON object has to be converted to a string.
@@ -75,7 +75,7 @@ jobs:
             "approved-1":
               {
                 "number": 1,
-                "await_label": "awaiting review"
+                "await_label": "awaiting-review"
               },
             "omg 2 approved":
               {
@@ -97,7 +97,7 @@ Check each open PR, and:
 
 * Apply the label `approved-1` to open PRs with:
     * 1 approval (or more).
-    * The label `awaiting review` (removing it afterwards).
+    * The label `awaiting-review` (removing it afterwards).
 * Apply the label `omg 2 approved` to open PRs with:
     * 2 approvals (or more).
     * The label `only 2` (removing it afterwards).
