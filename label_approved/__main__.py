@@ -12,7 +12,7 @@ class LabelSettings(BaseModel):
     number: int
 
 
-default_config = {"approved-2": LabelSettings(await_label="awaiting review", number=2)}
+default_config = {"approved-2": LabelSettings(await_label="awaiting-review", number=2)}
 
 
 class Settings(BaseSettings):
