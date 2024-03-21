@@ -72,9 +72,8 @@ body:
 
         Write a short description telling me what you are doing, what you expect to happen, and what is currently happening.
       placeholder: |
-        * Open the browser and call the endpoint `/`.
-        * It returns a JSON with `{"message": "Hello World"}`.
-        * But I expected it to return `{"message": "Hello Morty"}`.
+        * After 2 people approved the PR, this GitHub Action added the label `approved-2`.
+        * I expected it would merge the PR, but it only added a label.
     validations:
       required: true
   - type: dropdown
