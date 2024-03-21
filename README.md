@@ -109,6 +109,10 @@ Check each open PR, and:
 
 ### Latest Changes
 
+#### Internal
+
+* 🔧 Add GitHub templates for discussions and issues, and security policy. PR [#18](https://github.com/tiangolo/label-approved/pull/18) by [@alejsdev](https://github.com/alejsdev).
+
 ### 0.0.4
 
 #### Refactors
