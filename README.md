@@ -115,6 +115,10 @@ Check each open PR, and:
 
 ### Latest Changes
 
+#### Docs
+
+* 📝 Update docs to use needed permissions for orgs. PR [#19](https://github.com/tiangolo/label-approved/pull/19) by [@tiangolo](https://github.com/tiangolo).
+
 #### Internal
 
 * 🔧 Add GitHub templates for discussions and issues, and security policy. PR [#18](https://github.com/tiangolo/label-approved/pull/18) by [@alejsdev](https://github.com/alejsdev).
