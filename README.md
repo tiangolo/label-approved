@@ -17,6 +17,9 @@ on:
   schedule:
     - cron: "0 0 * * *"
 
+permissions:
+  issues: write
+
 jobs:
   label-approved:
     runs-on: ubuntu-latest
@@ -62,6 +65,9 @@ name: Label Approved
 on:
   schedule:
     - cron: "0 0 * * *"
+
+permissions:
+  issues: write
 
 jobs:
   label-approved:
