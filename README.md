@@ -121,6 +121,7 @@ Check each open PR, and:
 
 #### Internal
 
+* 👷 Update `latest-changes` GitHub Action. PR [#20](https://github.com/tiangolo/label-approved/pull/20) by [@tiangolo](https://github.com/tiangolo).
 * 🔧 Add GitHub templates for discussions and issues, and security policy. PR [#18](https://github.com/tiangolo/label-approved/pull/18) by [@alejsdev](https://github.com/alejsdev).
 
 ### 0.0.4
