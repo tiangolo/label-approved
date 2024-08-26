@@ -23,8 +23,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.LABEL_APPROVED_LATEST_CHANGES }}
-      - uses: docker://tiangolo/latest-changes:0.2.0
-      # - uses: tiangolo/latest-changes@main
+      - uses: tiangolo/latest-changes@0.3.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           debug_logs: true
