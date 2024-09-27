@@ -121,6 +121,7 @@ Check each open PR, and:
 
 #### Internal
 
+* ⬆ Bump docker/setup-buildx-action from 1 to 3. PR [#9](https://github.com/tiangolo/label-approved/pull/9) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * 👷 Update `issue-manager.yml`. PR [#21](https://github.com/tiangolo/label-approved/pull/21) by [@tiangolo](https://github.com/tiangolo).
 * 👷 Update `latest-changes` GitHub Action. PR [#20](https://github.com/tiangolo/label-approved/pull/20) by [@tiangolo](https://github.com/tiangolo).
 * 🔧 Add GitHub templates for discussions and issues, and security policy. PR [#18](https://github.com/tiangolo/label-approved/pull/18) by [@alejsdev](https://github.com/alejsdev).
