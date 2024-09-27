@@ -121,6 +121,7 @@ Check each open PR, and:
 
 #### Internal
 
+* ⬆ Bump docker/login-action from 1 to 3. PR [#12](https://github.com/tiangolo/label-approved/pull/12) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump docker/setup-buildx-action from 1 to 3. PR [#9](https://github.com/tiangolo/label-approved/pull/9) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * 👷 Update `issue-manager.yml`. PR [#21](https://github.com/tiangolo/label-approved/pull/21) by [@tiangolo](https://github.com/tiangolo).
 * 👷 Update `latest-changes` GitHub Action. PR [#20](https://github.com/tiangolo/label-approved/pull/20) by [@tiangolo](https://github.com/tiangolo).
