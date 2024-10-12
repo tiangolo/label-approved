@@ -32,7 +32,7 @@ jobs:
   label-approved:
     runs-on: ubuntu-latest
     steps:
-    - uses: docker://tiangolo/label-approved:0.0.3
+    - uses: docker://tiangolo/label-approved:0.0.5
     # You can also use the action directly, but that will take about an extra minute:
     # - uses: tiangolo/label-approved@0.0.3
       with:
@@ -81,7 +81,7 @@ jobs:
   label-approved:
     runs-on: ubuntu-latest
     steps:
-    - uses: docker://tiangolo/label-approved:0.0.3
+    - uses: docker://tiangolo/label-approved:0.0.5
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         config: >
@@ -122,6 +122,16 @@ Check each open PR, and:
 ## Release Notes
 
 ### Latest Changes
+
+### 0.0.5
+
+#### 🚨 Deprecation Warning 🚨
+
+This GitHub Action is now deprecated.
+
+This GitHub Action has been mainly used in FastAPI, the logic is very simple and quite specific to the FastAPI repo. It can be easily implemented in a GitHub Action workflow, in a local script.
+
+If you need similar behavior, consider copying the logic to your own GitHub Action workflow. You can get inspiration from this [PR in FastAPI](https://github.com/fastapi/fastapi/pull/12280).
 
 #### Docs
 
