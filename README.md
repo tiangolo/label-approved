@@ -122,6 +122,7 @@ Check each open PR, and:
 
 #### Internal
 
+* ⬆ Bump tiangolo/issue-manager from 0.5.0 to 0.5.1. PR [#23](https://github.com/tiangolo/label-approved/pull/23) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump docker/build-push-action from 5 to 6. PR [#22](https://github.com/tiangolo/label-approved/pull/22) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump docker/build-push-action from 2 to 5. PR [#10](https://github.com/tiangolo/label-approved/pull/10) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump docker/login-action from 1 to 3. PR [#12](https://github.com/tiangolo/label-approved/pull/12) by [@dependabot[bot]](https://github.com/apps/dependabot).
