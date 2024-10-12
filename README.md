@@ -18,7 +18,7 @@ on:
     - cron: "0 0 * * *"
 
 permissions:
-  issues: write
+  pull-requests: write
 
 jobs:
   label-approved:
@@ -67,7 +67,7 @@ on:
     - cron: "0 0 * * *"
 
 permissions:
-  issues: write
+  pull-requests: write
 
 jobs:
   label-approved:
