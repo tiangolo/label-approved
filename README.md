@@ -125,6 +125,7 @@ Check each open PR, and:
 
 #### Docs
 
+* 📝 Deprecate GitHub Action. PR [#25](https://github.com/tiangolo/label-approved/pull/25) by [@tiangolo](https://github.com/tiangolo).
 * 📝 Update required permissions. PR [#24](https://github.com/tiangolo/label-approved/pull/24) by [@tiangolo](https://github.com/tiangolo).
 * 📝 Update docs to use needed permissions for orgs. PR [#19](https://github.com/tiangolo/label-approved/pull/19) by [@tiangolo](https://github.com/tiangolo).
 
