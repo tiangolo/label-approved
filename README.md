@@ -4,6 +4,14 @@ Label PRs that have been approved a number of times.
 
 Inspired from [label-when-approved-action](https://github.com/abinoda/label-when-approved-action) but with support for PRs from forks.
 
+## 🚨 WARNING: Deprecated 🚨
+
+This GitHub Action is now deprecated.
+
+This GitHub Action has been mainly used in FastAPI, the logic is very simple and quite specific to the FastAPI repo. It can be easily implemented in a GitHub Action workflow, in a local script.
+
+If you need similar behavior, consider copying the logic to your own GitHub Action workflow. You can get inspiration from this [PR in FastAPI](https://github.com/fastapi/fastapi/pull/12280).
+
 ## How to use
 
 Install this GitHub action by creating a file in your repo at `.github/workflows/label-approved.yml`.
